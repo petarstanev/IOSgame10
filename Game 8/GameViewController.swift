@@ -13,6 +13,7 @@ class GameViewController: UIViewController {
 
     var game = Game()
     var sound = SoundHelper()
+    var vibration = VibrationHelper()
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -31,27 +32,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var arrowRight: UIImageView!
     @IBOutlet weak var arrowLeft: UIImageView!
     @IBOutlet weak var arrowDown: UIImageView!
-    
-    @IBAction func vibrationButtonEvent(_ sender: UIButton) {
-        print("vibration")
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
-        
-        /*
-            OR
-         
-         import AudioToolbox
-         
-         class ViewController: UIViewController {
-         
-         override func viewDidLoad() {
-         super.viewDidLoad()
-         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-         }
-         }
-        */
-		
-    }
     
     @objc func swipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -126,6 +106,7 @@ class GameViewController: UIViewController {
     
     func wrongAnswer() {
         sound.playSound(soundName: "wrong_answer")
+        vibration.vibrate()
         game.lives-=1
         switch game.lives {
         case 2:

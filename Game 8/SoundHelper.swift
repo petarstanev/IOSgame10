@@ -15,6 +15,7 @@ class SoundHelper {
     
     
     func playSound(soundName: String) {
+        //print("sound played - " + soundName)
         guard let url = Bundle.main.url(forResource: soundName, withExtension: "wav", subdirectory: "Sound") else {
             print("url not found")
             return
@@ -23,7 +24,7 @@ class SoundHelper {
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
             
-            player.prepareToPlay()
+            //player.prepareToPlay()
             player.play()
         } catch let error as NSError {
             print(error.description)
