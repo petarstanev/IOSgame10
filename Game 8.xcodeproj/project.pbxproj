@@ -10,9 +10,25 @@
 		EB79F25B2098EDB6007CEBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79F25A2098EDB6007CEBE6 /* AppDelegate.swift */; };
 		EB79F25D2098EDB6007CEBE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79F25C2098EDB6007CEBE6 /* ViewController.swift */; };
 		EB79F2602098EDB6007CEBE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB79F25E2098EDB6007CEBE6 /* Main.storyboard */; };
-		EB79F2632098EDB6007CEBE6 /* Game_8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB79F2612098EDB6007CEBE6 /* Game_8.xcdatamodeld */; };
-		EB79F2652098EDB6007CEBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB79F2642098EDB6007CEBE6 /* Assets.xcassets */; };
 		EB79F2682098EDB6007CEBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB79F2662098EDB6007CEBE6 /* LaunchScreen.storyboard */; };
+		EBDF94D420990F88008B6DAB /* AdditionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94BE20990F88008B6DAB /* AdditionQuestion.swift */; };
+		EBDF94D520990F88008B6DAB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94BF20990F88008B6DAB /* Answer.swift */; };
+		EBDF94D620990F88008B6DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF94C020990F88008B6DAB /* Assets.xcassets */; };
+		EBDF94D820990F88008B6DAB /* DivisionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94C220990F88008B6DAB /* DivisionQuestion.swift */; };
+		EBDF94D920990F88008B6DAB /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94C320990F88008B6DAB /* EndGameViewController.swift */; };
+		EBDF94DB20990F88008B6DAB /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94C620990F88008B6DAB /* Game.swift */; };
+		EBDF94DC20990F88008B6DAB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94C720990F88008B6DAB /* GameViewController.swift */; };
+		EBDF94DD20990F88008B6DAB /* HighScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94C820990F88008B6DAB /* HighScoreTableViewController.swift */; };
+		EBDF94DE20990F88008B6DAB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94C920990F88008B6DAB /* MenuViewController.swift */; };
+		EBDF94DF20990F88008B6DAB /* MultiplicationQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94CA20990F88008B6DAB /* MultiplicationQuestion.swift */; };
+		EBDF94E020990F88008B6DAB /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94CB20990F88008B6DAB /* OptionsController.swift */; };
+		EBDF94E120990F88008B6DAB /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94CC20990F88008B6DAB /* OptionsViewController.swift */; };
+		EBDF94E220990F88008B6DAB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94CD20990F88008B6DAB /* Question.swift */; };
+		EBDF94E320990F88008B6DAB /* QuestionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94CE20990F88008B6DAB /* QuestionFactory.swift */; };
+		EBDF94E420990F88008B6DAB /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94CF20990F88008B6DAB /* Score.swift */; };
+		EBDF94E520990F88008B6DAB /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94D020990F88008B6DAB /* ScoreTableViewCell.swift */; };
+		EBDF94E620990F88008B6DAB /* Sound in Resources */ = {isa = PBXBuildFile; fileRef = EBDF94D120990F88008B6DAB /* Sound */; };
+		EBDF94E720990F88008B6DAB /* SubtractionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94D220990F88008B6DAB /* SubtractionQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +36,26 @@
 		EB79F25A2098EDB6007CEBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB79F25C2098EDB6007CEBE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB79F25F2098EDB6007CEBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB79F2622098EDB6007CEBE6 /* Game_8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Game_8.xcdatamodel; sourceTree = "<group>"; };
-		EB79F2642098EDB6007CEBE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB79F2672098EDB6007CEBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB79F2692098EDB6007CEBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDF94BE20990F88008B6DAB /* AdditionQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionQuestion.swift; sourceTree = "<group>"; };
+		EBDF94BF20990F88008B6DAB /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		EBDF94C020990F88008B6DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBDF94C220990F88008B6DAB /* DivisionQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionQuestion.swift; sourceTree = "<group>"; };
+		EBDF94C320990F88008B6DAB /* EndGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		EBDF94C620990F88008B6DAB /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EBDF94C720990F88008B6DAB /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EBDF94C820990F88008B6DAB /* HighScoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreTableViewController.swift; sourceTree = "<group>"; };
+		EBDF94C920990F88008B6DAB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		EBDF94CA20990F88008B6DAB /* MultiplicationQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplicationQuestion.swift; sourceTree = "<group>"; };
+		EBDF94CB20990F88008B6DAB /* OptionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
+		EBDF94CC20990F88008B6DAB /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		EBDF94CD20990F88008B6DAB /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EBDF94CE20990F88008B6DAB /* QuestionFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionFactory.swift; sourceTree = "<group>"; };
+		EBDF94CF20990F88008B6DAB /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		EBDF94D020990F88008B6DAB /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		EBDF94D120990F88008B6DAB /* Sound */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sound; sourceTree = "<group>"; };
+		EBDF94D220990F88008B6DAB /* SubtractionQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtractionQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +88,29 @@
 		EB79F2592098EDB6007CEBE6 /* Game 8 */ = {
 			isa = PBXGroup;
 			children = (
+				EBDF94BE20990F88008B6DAB /* AdditionQuestion.swift */,
+				EBDF94BF20990F88008B6DAB /* Answer.swift */,
+				EBDF94C020990F88008B6DAB /* Assets.xcassets */,
+				EBDF94C220990F88008B6DAB /* DivisionQuestion.swift */,
+				EBDF94C320990F88008B6DAB /* EndGameViewController.swift */,
+				EBDF94C620990F88008B6DAB /* Game.swift */,
+				EBDF94C720990F88008B6DAB /* GameViewController.swift */,
+				EBDF94C820990F88008B6DAB /* HighScoreTableViewController.swift */,
+				EBDF94C920990F88008B6DAB /* MenuViewController.swift */,
+				EBDF94CA20990F88008B6DAB /* MultiplicationQuestion.swift */,
+				EBDF94CB20990F88008B6DAB /* OptionsController.swift */,
+				EBDF94CC20990F88008B6DAB /* OptionsViewController.swift */,
+				EBDF94CD20990F88008B6DAB /* Question.swift */,
+				EBDF94CE20990F88008B6DAB /* QuestionFactory.swift */,
+				EBDF94CF20990F88008B6DAB /* Score.swift */,
+				EBDF94D020990F88008B6DAB /* ScoreTableViewCell.swift */,
+				EBDF94D120990F88008B6DAB /* Sound */,
+				EBDF94D220990F88008B6DAB /* SubtractionQuestion.swift */,
 				EB79F25A2098EDB6007CEBE6 /* AppDelegate.swift */,
 				EB79F25C2098EDB6007CEBE6 /* ViewController.swift */,
 				EB79F25E2098EDB6007CEBE6 /* Main.storyboard */,
-				EB79F2642098EDB6007CEBE6 /* Assets.xcassets */,
 				EB79F2662098EDB6007CEBE6 /* LaunchScreen.storyboard */,
 				EB79F2692098EDB6007CEBE6 /* Info.plist */,
-				EB79F2612098EDB6007CEBE6 /* Game_8.xcdatamodeld */,
 			);
 			path = "Game 8";
 			sourceTree = "<group>";
@@ -126,8 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBDF94E620990F88008B6DAB /* Sound in Resources */,
 				EB79F2682098EDB6007CEBE6 /* LaunchScreen.storyboard in Resources */,
-				EB79F2652098EDB6007CEBE6 /* Assets.xcassets in Resources */,
+				EBDF94D620990F88008B6DAB /* Assets.xcassets in Resources */,
 				EB79F2602098EDB6007CEBE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,8 +189,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB79F25D2098EDB6007CEBE6 /* ViewController.swift in Sources */,
+				EBDF94E120990F88008B6DAB /* OptionsViewController.swift in Sources */,
+				EBDF94DB20990F88008B6DAB /* Game.swift in Sources */,
+				EBDF94E220990F88008B6DAB /* Question.swift in Sources */,
+				EBDF94E320990F88008B6DAB /* QuestionFactory.swift in Sources */,
+				EBDF94D420990F88008B6DAB /* AdditionQuestion.swift in Sources */,
+				EBDF94D820990F88008B6DAB /* DivisionQuestion.swift in Sources */,
+				EBDF94E020990F88008B6DAB /* OptionsController.swift in Sources */,
+				EBDF94D520990F88008B6DAB /* Answer.swift in Sources */,
+				EBDF94E720990F88008B6DAB /* SubtractionQuestion.swift in Sources */,
+				EBDF94E520990F88008B6DAB /* ScoreTableViewCell.swift in Sources */,
 				EB79F25B2098EDB6007CEBE6 /* AppDelegate.swift in Sources */,
-				EB79F2632098EDB6007CEBE6 /* Game_8.xcdatamodeld in Sources */,
+				EBDF94DE20990F88008B6DAB /* MenuViewController.swift in Sources */,
+				EBDF94D920990F88008B6DAB /* EndGameViewController.swift in Sources */,
+				EBDF94E420990F88008B6DAB /* Score.swift in Sources */,
+				EBDF94DF20990F88008B6DAB /* MultiplicationQuestion.swift in Sources */,
+				EBDF94DD20990F88008B6DAB /* HighScoreTableViewController.swift in Sources */,
+				EBDF94DC20990F88008B6DAB /* GameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,21 +369,9 @@
 				EB79F26E2098EDB6007CEBE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EB79F2612098EDB6007CEBE6 /* Game_8.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EB79F2622098EDB6007CEBE6 /* Game_8.xcdatamodel */,
-			);
-			currentVersion = EB79F2622098EDB6007CEBE6 /* Game_8.xcdatamodel */;
-			path = Game_8.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EB79F24F2098EDB6007CEBE6 /* Project object */;
 }
