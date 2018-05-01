@@ -7,11 +7,12 @@
 //
 
 import UIKit
-import AVFoundation
+
 
 class GameViewController: UIViewController {
 
     var game = Game()
+    var sound = SoundHelper()
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
@@ -30,31 +31,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var arrowRight: UIImageView!
     @IBOutlet weak var arrowLeft: UIImageView!
     @IBOutlet weak var arrowDown: UIImageView!
-    
-    
-    var player: AVAudioPlayer?
-    
-    @IBAction func musicButtonEvent(_ sender: UIButton) {
-        print("music")
-        guard let url = Bundle.main.url(forResource: "correct_answer", withExtension: "wav") else {
-            print("url not found")
-            return
-        }
-        do {
-            /// this codes for making this app ready to takeover the device audio
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            /// change fileTypeHint according to the type of your audio file (you can omit this)
-            /// for iOS 11 onward, use :
-            let player = try AVAudioPlayer(contentsOf: url)
-            /// else :
-            /// player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3)
-            // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
-            player.play()
-        } catch let error as NSError {
-            print("error: \(error.localizedDescription)")
-        }
-    }
     
     @IBAction func vibrationButtonEvent(_ sender: UIButton) {
         print("vibration")
@@ -132,8 +108,7 @@ class GameViewController: UIViewController {
         print(sender.tag)
         let answer = question.answers[sender.tag]
         if (answer.correct){
-            game.score += 10
-            newQuestion()
+            correctAnswer()
         }else{
             sender.backgroundColor = UIColor.red
             sender.isEnabled = false
@@ -143,9 +118,15 @@ class GameViewController: UIViewController {
         scoreLabel.text = String(game.score)
     }
     
+    func correctAnswer() {
+        sound.playSound(soundName: "correct_answer")
+        game.score += 10
+        newQuestion()
+    }
+    
     func wrongAnswer() {
+        sound.playSound(soundName: "wrong_answer")
         game.lives-=1
-        
         switch game.lives {
         case 2:
             heartThree.isHidden = true
