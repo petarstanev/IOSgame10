@@ -11,6 +11,8 @@ import UIKit
 class EndGameViewController: UIViewController {
 
     var score: Int = 0
+    var fileHelper = FileHelper()
+    var textResultFileName: String = "results.txt"
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var nameText: UITextField!
@@ -18,7 +20,10 @@ class EndGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         scoreLabel.text = String(score)
+        let textResult = fileHelper.read(fileName: textResultFileName)
+        print(textResult)
         // Do any additional setup after loading the view.
     }
 
@@ -39,6 +44,10 @@ class EndGameViewController: UIViewController {
         saveScoreButton.isEnabled = false
         saveScoreButton.setTitle("Score saved", for: .normal)
         nameText.isEnabled = false
+        
+        var textResult = fileHelper.read(fileName: textResultFileName)
+        let newResultLine = textResult + newscore.toString() + ","
+        fileHelper.write(fileName: textResultFileName, text: newResultLine)
     }
     
     

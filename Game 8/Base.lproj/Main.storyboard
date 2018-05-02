@@ -153,7 +153,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.36041382869999999" green="1" blue="0.3415598936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="answerFour" destination="xnG-i7-vv8" id="Ysf-17-BMc"/>
                         <outlet property="answerOne" destination="it7-iJ-zhT" id="rOl-Ra-ipD"/>
@@ -248,6 +247,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="nameText" destination="ivU-bL-swh" id="eIn-Qg-vuU"/>
                         <outlet property="saveScoreButton" destination="lkO-XH-bnv" id="H04-FH-8ln"/>
@@ -316,7 +316,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Game" id="IOh-hF-NwI">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="cGX-HA-qQA"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="QST-9F-m9l"/>
                     </navigationItem>
                     <connections>
                         <outlet property="centerStar" destination="VGo-Fr-Gpg" id="ZyH-D9-ugj"/>
@@ -411,16 +411,16 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vibration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVy-j1-gyu">
-                                <rect key="frame" x="110" y="256" width="90" height="28"/>
+                                <rect key="frame" x="97" y="256" width="119" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNK-fP-jR4">
-                                <rect key="frame" x="110" y="179" width="65" height="28"/>
+                                <rect key="frame" x="97" y="179" width="106" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -434,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ye-98-gUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="505"/>
+            <point key="canvasLocation" x="603.75" y="505"/>
         </scene>
     </scenes>
     <resources>
@@ -443,7 +443,7 @@
         <image name="star" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bbC-Mi-3uE"/>
+        <segue reference="ZvA-Q1-svq"/>
         <segue reference="Ojq-lZ-gs6"/>
     </inferredMetricsTieBreakers>
 </document>

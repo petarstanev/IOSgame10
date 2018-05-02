@@ -15,7 +15,6 @@ class OptionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let defaults = UserDefaults.standard
         let soundValue = defaults.bool(forKey: "sound")
         soundSwitch.setOn(soundValue, animated: false)

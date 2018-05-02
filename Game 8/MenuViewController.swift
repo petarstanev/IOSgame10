@@ -18,8 +18,8 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationItem.setHidesBackButton(true, animated: false)
         UIView.animate(withDuration: 2.5, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.leftStar.transform = CGAffineTransform(rotationAngle:  CGFloat.pi)
             self.centerStar.transform = CGAffineTransform(rotationAngle: 0.5)

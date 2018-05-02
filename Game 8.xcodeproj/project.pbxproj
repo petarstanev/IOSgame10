@@ -11,6 +11,9 @@
 		EB79F25D2098EDB6007CEBE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB79F25C2098EDB6007CEBE6 /* ViewController.swift */; };
 		EB79F2602098EDB6007CEBE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB79F25E2098EDB6007CEBE6 /* Main.storyboard */; };
 		EB79F2682098EDB6007CEBE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB79F2662098EDB6007CEBE6 /* LaunchScreen.storyboard */; };
+		EB950EA4209943110084786A /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB950EA1209943110084786A /* FileHelper.swift */; };
+		EB950EA5209943110084786A /* SoundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB950EA2209943110084786A /* SoundHelper.swift */; };
+		EB950EA6209943110084786A /* VibrationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB950EA3209943110084786A /* VibrationHelper.swift */; };
 		EBDF94D420990F88008B6DAB /* AdditionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94BE20990F88008B6DAB /* AdditionQuestion.swift */; };
 		EBDF94D520990F88008B6DAB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDF94BF20990F88008B6DAB /* Answer.swift */; };
 		EBDF94D620990F88008B6DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDF94C020990F88008B6DAB /* Assets.xcassets */; };
@@ -38,6 +41,9 @@
 		EB79F25F2098EDB6007CEBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB79F2672098EDB6007CEBE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB79F2692098EDB6007CEBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB950EA1209943110084786A /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		EB950EA2209943110084786A /* SoundHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundHelper.swift; sourceTree = "<group>"; };
+		EB950EA3209943110084786A /* VibrationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationHelper.swift; sourceTree = "<group>"; };
 		EBDF94BE20990F88008B6DAB /* AdditionQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionQuestion.swift; sourceTree = "<group>"; };
 		EBDF94BF20990F88008B6DAB /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		EBDF94C020990F88008B6DAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 		EB79F2592098EDB6007CEBE6 /* Game 8 */ = {
 			isa = PBXGroup;
 			children = (
+				EB950EA1209943110084786A /* FileHelper.swift */,
+				EB950EA2209943110084786A /* SoundHelper.swift */,
+				EB950EA3209943110084786A /* VibrationHelper.swift */,
 				EBDF94BE20990F88008B6DAB /* AdditionQuestion.swift */,
 				EBDF94BF20990F88008B6DAB /* Answer.swift */,
 				EBDF94C020990F88008B6DAB /* Assets.xcassets */,
@@ -189,9 +198,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB79F25D2098EDB6007CEBE6 /* ViewController.swift in Sources */,
+				EB950EA5209943110084786A /* SoundHelper.swift in Sources */,
 				EBDF94E120990F88008B6DAB /* OptionsViewController.swift in Sources */,
 				EBDF94DB20990F88008B6DAB /* Game.swift in Sources */,
 				EBDF94E220990F88008B6DAB /* Question.swift in Sources */,
+				EB950EA6209943110084786A /* VibrationHelper.swift in Sources */,
 				EBDF94E320990F88008B6DAB /* QuestionFactory.swift in Sources */,
 				EBDF94D420990F88008B6DAB /* AdditionQuestion.swift in Sources */,
 				EBDF94D820990F88008B6DAB /* DivisionQuestion.swift in Sources */,
@@ -205,6 +216,7 @@
 				EBDF94E420990F88008B6DAB /* Score.swift in Sources */,
 				EBDF94DF20990F88008B6DAB /* MultiplicationQuestion.swift in Sources */,
 				EBDF94DD20990F88008B6DAB /* HighScoreTableViewController.swift in Sources */,
+				EB950EA4209943110084786A /* FileHelper.swift in Sources */,
 				EBDF94DC20990F88008B6DAB /* GameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
