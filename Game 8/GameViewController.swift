@@ -95,7 +95,7 @@ class GameViewController: UIViewController {
             wrongAnswer()            
         }
         //update data
-        scoreLabel.text = String(game.score)
+        
     }
     
     func correctAnswer() {
@@ -121,7 +121,7 @@ class GameViewController: UIViewController {
     
     func newQuestion() {
         let question = game.generateQuestion()
-        
+        scoreLabel.text = String(game.score)
         questionLabel.text = question.printQuestion()
         answerOne.setTitle(question.answers[0].print(), for: .normal)
         answerTwo.setTitle(question.answers[1].print(), for: .normal)
