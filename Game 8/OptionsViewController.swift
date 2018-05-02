@@ -13,6 +13,13 @@ class OptionsViewController: UIViewController {
     @IBOutlet weak var soundSwitch: UISwitch!
     @IBOutlet weak var vibrationSwitch: UISwitch!
     
+    @IBAction func clearScoreClick(_ sender: UIButton) {
+        let fileHelper = FileHelper()
+        let textResultFileName: String = "results.txt"
+                
+        fileHelper.write(fileName: textResultFileName, text: "")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = UserDefaults.standard
