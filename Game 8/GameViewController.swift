@@ -85,7 +85,7 @@ class GameViewController: UIViewController {
     
     @IBAction func answerPress(_ sender: UIButton) {
         let question = game.question
-        print(sender.tag)
+        //print(sender.tag)
         let answer = question.answers[sender.tag]
         if (answer.correct){
             correctAnswer()

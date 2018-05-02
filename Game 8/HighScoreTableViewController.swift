@@ -10,6 +10,7 @@ import UIKit
 
 class HighScoreTableViewController: UITableViewController {
     var scores = [Score]()
+    var textResultFileName: String = "results.txt"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +26,30 @@ class HighScoreTableViewController: UITableViewController {
         scores.append(Score(name: "Smith", points: 30))
         scores.append(Score(name: "Stanev", points: 15))*/
         
+        /*
         let defaults = UserDefaults.standard
         var scoresStrings = defaults.stringArray(forKey: "Scores") ?? [String]()
         for scoreString in scoresStrings {
             let score = Score(input: scoreString)
             scores.append(score)
             //print(scoreString)
-        }       
+        }*/
+        
+        
+        let fileHelper = FileHelper()
+        
+        let textResult = fileHelper.read(fileName: textResultFileName)
+        //print(textResult)
+        
+        let scoresStrings = textResult.components(separatedBy: ",")
+        
+        for scoreString in scoresStrings {
+            if scoreString.characters.count > 1 {
+                let score = Score(input: scoreString)
+                scores.append(score)
+            }
+            //print(scoreString)
+        }
         
         scores = scores.sorted(by: { $0.points > $1.points }) //sorting by points
     }

@@ -11,7 +11,10 @@ import AudioToolbox
 
 class VibrationHelper {
     func vibrate() {
-        //print("vibration")
-        AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        let defaults = UserDefaults.standard
+        let vibrationValue = defaults.bool(forKey: "vibration")
+        if vibrationValue {
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+        }
     }
 }

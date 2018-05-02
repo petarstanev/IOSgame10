@@ -22,9 +22,6 @@ class EndGameViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         scoreLabel.text = String(score)
-        let textResult = fileHelper.read(fileName: textResultFileName)
-        print(textResult)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
